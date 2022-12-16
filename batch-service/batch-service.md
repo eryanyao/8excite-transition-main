@@ -3,6 +3,7 @@ This document is the documentation of this service. It was the automation servic
 
 ### Architecture Diagram
 ![enter image description here](./images/batch-service-architecture.PNG)
+
 Processors for the batch service will be triggered via RabbitMQ or scheduled by tasker-service with cron jobs.  It will be processed automatically when the specified date time hit.
 
 ### Processor Listing
