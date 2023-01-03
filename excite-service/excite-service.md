@@ -2,7 +2,7 @@
 This document is the documentation of this service. It was the backend services of the 8excite+ application.  Includes all user interactions while performing steps in the 8excite+ app.
 
 ## Architecture Diagram
-![enter image description here](./images/8excite-Architecture%20Diagram.drawio.png)
+![Architecture Diagram](./images/8excite-Architecture%20Diagram.drawio.png)
 
 ---
 ## Modules
@@ -15,11 +15,22 @@ This module will trigger when user interact with product. It only including read
 	- **Variation product** - product having variations (variations field length > 0)
 	- **Bundle product** - can bundled with simple product or variation product (products field length > 0 AND isBundle field = true)
 	- **Free gift product** - product cannot be purchased (isFree field = true)
-	
-#### Flow Diagram
-#### Detailed Flow Diagram
-#### List of APIs
+
+#### 1.1 Get Product Listing	
+##### Flow Diagram
+![Get Product Listing](./images/8excite-excite-service%20-%20Get%20Product%20Listing.drawio.png)
+
+Banner filter will based on the record return by banner. It will updating the filter element provided. For example, banner filter by brand, it will update the brandIds before get the product.
+
+##### List of APIs
 - GET /products
+
+#### 1.2 Get Product Listing	
+##### Flow Diagram
+
+![Get Product Detail](./images/8excite-excite-service%20-%20Get%20Product%20Detail.drawio.png)
+
+##### List of APIs
 - GET /products/{productId} 
 
 ### 2. Group Buy
@@ -62,6 +73,9 @@ This module will trigger when user checkout with multiple group buy product. It 
 - POST /v2/calculator/checkout/summary
 
 #### 3.4 Multi Group Buy Checkout
+##### Description
+This module will trigger when user checkout with multiple group buy product after multi group buy calculator. It will generate order based on the calculator result.
+
 #### 3.5 Group Buy Top Up Calculator
 ##### Description
 This module will trigger when user checkout with pending topup group buy orders.
@@ -75,10 +89,59 @@ This module will trigger when user checkout with pending topup group buy orders.
 #### 3.6 Group Buy Top Up Checkout
 
 ### 4. Warehouse
+This api will show the item that to be bundle.
+
+#### Flow Diagram
+![enter image description here](./images/8excite-excite-service%20-%20Get%20Warehouse%20Items.drawio.png)
+
+Only show in stock warehouses related by user.
+
+#### List of APIs
+- GET /user/warehouse/items
+
 ### 5. Bundle Shipment
+Only shipment method = bundle will be create. 
+
+#### 5.1 Shipment checkout calculator
+##### Flow Diagram
+![enter image description here](./images/8excite-excite-service%20-%20Shipment%20Checkout%20Calculator.drawio.png)
+
+##### List of APIs
+- POST /calculator/checkout/shipments/summary
+
+#### 5.2 Shipment checkout
+##### Flow Diagram
+##### List of APIs
+
 ### 6. Inventory
 
+##### Flow Diagram
+##### List of APIs
+
 ### 7. Reward
+#### 7.1 Reward Handler Command 
+##### List of Rewards
+1. userReferral
+2. refereeFirstPurchase
+3. signUp
+4. topUpgroupBuyOrderReward
+5. orderReward
+6. shipmentReward
+
+##### List of Functions
+1. processUserReferralReward
+2. processRefereeFirstPurchaseReward
+3. reprocessRefereeFirstPurchaseReward
+4. processSignUpReward
+5. processTopUpGroupBuyOrderReward
+6. processOrderReward
+7. processShipmentReward
+
+##### Order Reward/Shipment Reward
+###### Flow Diagram
+![Order Reward/Shipment Reward](./images/8excite-excite-service%20-%20Reward%20Command%20Handler%20-%20Order%20Reward%20And%20Shipment%20Reward.drawio.png)
+
+##### List of APIs
 
 ---
 ## Utils
