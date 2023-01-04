@@ -131,9 +131,11 @@ Only shipment method = bundle will be create.
 - POST /user/shipments
 
 ### 6. Inventory
+##### Description
+This flowchart will show the inventory changes when the group buying order is created.
 
 ##### Flow Diagram
-##### List of APIs
+![Inventory Group Buy Order](./images/8excite-excite-service%20-%20Inventory%20-%20Group%20Buy%20Order.drawio.png)
 
 ### 7. Reward
 #### 7.1 Reward Handler Command 
@@ -141,7 +143,7 @@ Only shipment method = bundle will be create.
 1. userReferral
 2. refereeFirstPurchase
 3. signUp
-4. topUpgroupBuyOrderReward
+4. topUpGroupBuyOrderReward
 5. orderReward
 6. shipmentReward
 
