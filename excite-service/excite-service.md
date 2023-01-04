@@ -161,6 +161,7 @@ Only shipment method = bundle will be create.
 
 
 ---
+
 ## Utils
 ### 1. Google Address
 #### 1.1 Get City
@@ -171,6 +172,9 @@ Get the address from google map api. For the city will having different object n
 
 #### 1.2 Unwrap Address Component
 ##### Flow Chart
+![Google Address - Unwrap Address Component](./images/8excite-Utils%20-%20Google%20Address%20-%20Unwrap%20address%20component.drawio.png)
+
+Unwrap the address component passed from google.
 
 ### 2. Redeem Point Calculator
 #### 2.1 Calculate Summary
