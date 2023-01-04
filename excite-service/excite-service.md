@@ -42,6 +42,8 @@ Banner filter will based on the record return by banner. It will updating the fi
 - GET /groupBuys/{groupBuyId} 
 
 ### 3. Order
+Order related apis, including group buy calculator and checkout.
+
 #### 3.1 Single Group Buy Calculator 
 ##### Description
 This module will trigger when user checkout with group buy product. It will calculate user cart product with voucher and 8excite point. User can select the payment method they prefer. After calculated, user will get the total amount that need to pay. 
@@ -76,17 +78,29 @@ This module will trigger when user checkout with multiple group buy product. It 
 ##### Description
 This module will trigger when user checkout with multiple group buy product after multi group buy calculator. It will generate order based on the calculator result.
 
+##### Flow Diagram
+![enter image description here](./images/8excite-excite-service%20-%20Multi%20Group%20Buy%20Checkout.drawio.png)
+
 #### 3.5 Group Buy Top Up Calculator
 ##### Description
 This module will trigger when user checkout with pending topup group buy orders.
 
 ##### Flow Diagram
-![enter image description here](./images/8excite-excite-service%20-%20Top%20Up%20Group%20Buy%20Calculator.drawio.png)
+![Group Buy Top Up Calculator](./images/8excite-excite-service%20-%20Top%20Up%20Group%20Buy%20Calculator.drawio.png)
 
 ##### List of APIs
 - POST /v2/calculator/checkout/groupBuys/{groupBuyId}/topup/summary 
 
 #### 3.6 Group Buy Top Up Checkout
+
+##### Description
+This module will trigger after group buy top up calculator.
+
+##### Flow Diagram
+![Group Buy Top Up Checkout](./images/8excite-excite-service%20-%20Multi%20Group%20Buy%20Checkout.drawio.png)
+
+##### List of APIs
+- POST /v2/user/groupBuys/{groupBuyId}/topup 
 
 ### 4. Warehouse
 This api will show the item that to be bundle.
@@ -104,14 +118,17 @@ Only shipment method = bundle will be create.
 
 #### 5.1 Shipment checkout calculator
 ##### Flow Diagram
-![enter image description here](./images/8excite-excite-service%20-%20Shipment%20Checkout%20Calculator.drawio.png)
+![Shipment Checkout Calculator](./images/8excite-excite-service%20-%20Shipment%20Checkout%20Calculator.drawio.png)
 
 ##### List of APIs
 - POST /calculator/checkout/shipments/summary
 
 #### 5.2 Shipment checkout
 ##### Flow Diagram
+![Shipment Checkout](./images/8excite-excite-service%20-%20Shipment%20Checkout.drawio.png)
+
 ##### List of APIs
+- POST /user/shipments
 
 ### 6. Inventory
 
@@ -141,14 +158,14 @@ Only shipment method = bundle will be create.
 ###### Flow Diagram
 ![Order Reward/Shipment Reward](./images/8excite-excite-service%20-%20Reward%20Command%20Handler%20-%20Order%20Reward%20And%20Shipment%20Reward.drawio.png)
 
-##### List of APIs
+
 
 ---
 ## Utils
 ### 1. Google Address
 #### 1.1 Get City
 ##### Flow Chart
-![enter image description here](./images/8excite-Utils%20-%20Google%20Address%20-%20Get%20City.drawio.png)
+![Google Address - Get City](./images/8excite-Utils%20-%20Google%20Address%20-%20Get%20City.drawio.png)
 
 Get the address from google map api. For the city will having different object name, this function will be based on city's object name, to return the correct city name.
 
