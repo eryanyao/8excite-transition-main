@@ -35,13 +35,18 @@ Processors for the batch service will be triggered via RabbitMQ or scheduled by 
 25. sendPushNotificationProcessor
 26. takafulReminderProcessor
 
+### Processor Details
 #### 1. applicationBroadcastProcessor
 ##### Flow Diagram
 ![Application Broadcast Processor](./images/8excite-batch-service%20-%20applicationBroadcaseProcessor.drawio.png)
 
+#### 9. createWarehouseBundleShipmentProcessor
+##### Flow Diagram
+![Create Wahouse Bundle Shipment Processor](./images/8excite-batch-service%20-%20createWarehouseBundleShipmentProcessor.drawio.png)
+
 #### 10. createWarehouseOrderProcessor
 ##### Flow Diagram
-![Create Wahouse Order Processor](./images/8excite-batch-service%20-%20createWasehouseOrderProcessor.drawio.png)
+![Create Warehouse Order Processor](./images/8excite-batch-service%20-%20createWasehouseOrderProcessor.drawio.png)
 
 #### 23. rewardProcessor
 ##### Flow Diagram
