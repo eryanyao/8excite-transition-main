@@ -2,7 +2,7 @@
 This document is the documentation of this service. It was the automation services to support 8excite project. 
 
 ### Architecture Diagram
-![enter image description here](./images/batch-service-architecture.PNG)
+![Architecture Diagram](./images/batch-service-architecture.PNG)
 
 Processors for the batch service will be triggered via RabbitMQ or scheduled by tasker-service with cron jobs.  It will be processed automatically when the specified date time hit.
 
@@ -37,5 +37,7 @@ Processors for the batch service will be triggered via RabbitMQ or scheduled by 
 
 #### 1. applicationBroadcastProcessor
 ##### Flow Diagram
+![Application Broadcast Processor](./images/8excite-batch-service%20-%20applicationBroadcaseProcessor.drawio.png)
 
-
+#### 2. applicationBroadcastProcessor
+##### Flow Diagram
