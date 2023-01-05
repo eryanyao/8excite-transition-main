@@ -35,5 +35,7 @@ Processors for the batch service will be triggered via RabbitMQ or scheduled by 
 25. sendPushNotificationProcessor
 26. takafulReminderProcessor
 
+#### 1. applicationBroadcastProcessor
+##### Flow Diagram
 
 

@@ -56,14 +56,21 @@ The inventory reserved quantity and physical quantity will be deduct when shipme
 ###### List of APIs
 - POST /products
 
-##### 4.3.2 Update Product
+##### 4.3.2 Update Product Bundle Item
 ###### Flow Diagram
-![Inventory - Product - Update Product](./images/8excite-excite-admin-service%20-%20Inventory%20-%20Update%20Bundle%20Item%20Product.drawio.png)
+![Inventory - Product - Update Product Bundle Item](./images/8excite-excite-admin-service%20-%20Inventory%20-%20Update%20Bundle%20Item%20Product.drawio.png)
 
 ###### List of APIs
 - PUT /products/{productId}/bundleProducts
 
-##### 4.3.3 Delete Product
+##### 4.3.3 Update Product Variation
+###### Flow Diagram
+![Inventory - Product - Update Product Variation](./images/8excite-excite-admin-service%20-%20Inventory%20-%20Update%20Product%20Variation%20.drawio.png)
+
+###### List of APIs
+- PUT /products/{productId}/variations
+
+##### 4.3.4 Delete Product
 ###### Flow Diagram
 ![Inventory - Product - Delete Product](./images/8excite-excite-admin-service%20-%20Inventory%20-%20Delete%20Product.drawio.png)
 
