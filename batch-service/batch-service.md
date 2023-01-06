@@ -4,7 +4,7 @@ This document is the documentation of this service. It was the automation servic
 ### Architecture Diagram
 ![Architecture Diagram](./images/batch-service-architecture.PNG)
 
-Processors for the batch service will be triggered via RabbitMQ or scheduled by tasker-service with cron jobs.  It will be processed automatically when the specified date time hit.
+Processors for the batch service will be triggered via RabbitMQ or scheduled by tasker-service with cron jobs. It will be processed automatically when the specified date time hit.
 
 ### Processor Listing
 
@@ -49,6 +49,13 @@ This processor will update the status of the tasker through rabbitMQ and trigger
 
 ##### Flow Diagram
 ![Campaign Group Buy Processor](./images/8excite-batch-service%20-%20campaignGroupBuyProcessor.drawio.png)
+
+#### 6. cancelOrderProcessor
+##### Description
+This processor will cancel order when payment end at hit and order status = pending.
+
+##### Flow Diagram
+![Cancel Order Processor](./images/8excite-batch-service%20-%20cancelOrderProcessor.drawio.png)
 
 #### 8. createGroupBuyProcessor
 ##### Description
