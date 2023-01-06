@@ -57,6 +57,13 @@ This processor will cancel order when payment end at hit and order status = pend
 ##### Flow Diagram
 ![Cancel Order Processor](./images/8excite-batch-service%20-%20cancelOrderProcessor.drawio.png)
 
+#### 7. cancelShipmentProcessor
+##### Description
+This processor will cancel shipment when payment end at hit and order status = pending.
+
+##### Flow Diagram
+![Cancel Shipment Processor](./images/8excite-batch-service%20-%20cancelShipmentProcessor.drawio.png)
+
 #### 8. createGroupBuyProcessor
 ##### Description
 This processor will create group buy based on campaign information.
