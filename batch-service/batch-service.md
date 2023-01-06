@@ -50,6 +50,13 @@ This processor will update the status of the tasker through rabbitMQ and trigger
 ##### Flow Diagram
 ![Campaign Group Buy Processor](./images/8excite-batch-service%20-%20campaignGroupBuyProcessor.drawio.png)
 
+#### 8. createGroupBuyProcessor
+##### Description
+This processor will create group buy based on campaign information.
+
+##### Flow Diagram
+![Create Group Buy Processor](./images/8excite-batch-service%20-%20createGroupBuyProcessor.drawio.png)
+
 #### 9. createWarehouseBundleShipmentProcessor
 ##### Description
 This processor will send relevant information to the warehouse service to create the record and it will help update shipment status based on warehouse service response.
