@@ -92,6 +92,13 @@ This processor will update group buy current quantity and ops user.
 ##### Flow Diagram
 ![Group Buy Bot Processor](./images/8excite-batch-service%20-%20groupBuyBotProcessor.drawio.png)
 
+#### 12. groupBuyClosingSoonProcessor
+##### Description
+This processor will send notification when group buy closing soon.
+
+##### Flow Diagram
+![Group Buy Closing Soon Processor](./images/8excite-batch-service%20-%20groupBuyClosingSoonProcessor.drawio.png)
+
 #### 13. groupBuyExpirationProcessor
 ##### Description
 This processor will process pending top up orders when top up end at hit based on order with related group buy id.
