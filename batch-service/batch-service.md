@@ -48,6 +48,10 @@ Processors for the batch service will be triggered via RabbitMQ or scheduled by 
 ##### Flow Diagram
 ![Create Warehouse Order Processor](./images/8excite-batch-service%20-%20createWasehouseOrderProcessor.drawio.png)
 
+#### 19. productImportProcessor
+##### Flow Diagram
+![Product Import Processor](./images/8excite-batch-service%20-%20productImportProcessor.drawio.png)
+
 #### 23. rewardProcessor
 ##### Flow Diagram
 ![Reward Processor](./images/8excite-batch-service%20-%20rewardProcessor.drawio.png)
