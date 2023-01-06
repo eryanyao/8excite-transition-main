@@ -37,29 +37,50 @@ Processors for the batch service will be triggered via RabbitMQ or scheduled by 
 
 ### Processor Details
 #### 1. applicationBroadcastProcessor
+##### Description
+This processor will broadcast notification to related all users.
+
 ##### Flow Diagram
 ![Application Broadcast Processor](./images/8excite-batch-service%20-%20applicationBroadcaseProcessor.drawio.png)
 
 #### 9. createWarehouseBundleShipmentProcessor
+##### Description
+This processor will send relevant information to the warehouse service to create the record and it will help update shipment status based on warehouse service response.
+
 ##### Flow Diagram
 ![Create Wahouse Bundle Shipment Processor](./images/8excite-batch-service%20-%20createWarehouseBundleShipmentProcessor.drawio.png)
 
 #### 10. createWarehouseOrderProcessor
+##### Description
+This processor will send relevant information to the warehouse service to create the record and it will help update shipment status and warehouse status based on warehouse service response.
+
 ##### Flow Diagram
 ![Create Warehouse Order Processor](./images/8excite-batch-service%20-%20createWasehouseOrderProcessor.drawio.png)
 
 #### 19. productImportProcessor
+##### Description
+This processor will take the product import information to get the file and convert it into an object and store into the database. It will log error if the error come out.
+
 ##### Flow Diagram
 ![Product Import Processor](./images/8excite-batch-service%20-%20productImportProcessor.drawio.png)
 
 #### 23. rewardProcessor
+##### Description
+This processor will get the reward and forecast the reward to the user based on reward setting.
+
 ##### Flow Diagram
 ![Reward Processor](./images/8excite-batch-service%20-%20rewardProcessor.drawio.png)
 
 #### 24. sendEmailNotificationProcessor
+##### Description
+This processor will trigger the smtp server and sent the email to the user.
+
 ##### Flow Diagram
 ![Send Email Notification Processor](./images/8excite-batch-service%20-%20sendEmailNotificationProcessor.drawio.png)
 
 #### 25. sendPushNotificationProcessor
+##### Description
+This processor will trigger the firebase service and sent the notification to the user.
+
 ##### Flow Diagram
 ![Send Push Notification Processor](./images/8excite-batch-service%20-%20sendPushNotificationProcessor.drawio.png)
