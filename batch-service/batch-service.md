@@ -85,6 +85,13 @@ This processor will send relevant information to the warehouse service to create
 ##### Flow Diagram
 ![Create Warehouse Order Processor](./images/8excite-batch-service%20-%20createWasehouseOrderProcessor.drawio.png)
 
+#### 11. groupBuyBotProcessor
+##### Description
+This processor will update group buy current quantity and ops user.
+
+##### Flow Diagram
+![Group Buy Bot Processor](./images/8excite-batch-service%20-%20groupBuyBotProcessor.drawio.png)
+
 #### 13. groupBuyExpirationProcessor
 ##### Description
 This processor will process pending top up orders when top up end at hit based on order with related group buy id.
