@@ -43,6 +43,13 @@ This processor will broadcast notification to related all users.
 ##### Flow Diagram
 ![Application Broadcast Processor](./images/8excite-batch-service%20-%20applicationBroadcaseProcessor.drawio.png)
 
+#### 5. campaignGroupBuyProcessor
+##### Description
+This processor will update the status of the tasker through rabbitMQ and trigger the create group buy processor.
+
+##### Flow Diagram
+![Campaign Group Buy Processor](./images/8excite-batch-service%20-%20campaignGroupBuyProcessor.drawio.png)
+
 #### 9. createWarehouseBundleShipmentProcessor
 ##### Description
 This processor will send relevant information to the warehouse service to create the record and it will help update shipment status based on warehouse service response.
