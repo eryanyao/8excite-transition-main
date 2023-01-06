@@ -127,6 +127,13 @@ This processor will take the product import information to get the file and conv
 ##### Flow Diagram
 ![Product Import Processor](./images/8excite-batch-service%20-%20productImportProcessor.drawio.png)
 
+#### 20. productKeywordProcessor
+##### Description
+This processor will get the available product's keywords and updating the product keyword records.
+
+##### Flow Diagram
+![Product Keyword Processor](./images/8excite-batch-service%20-%20productKeywordProcessor.drawio.png)
+
 #### 23. rewardProcessor
 ##### Description
 This processor will get the reward and forecast the reward to the user based on reward setting.
