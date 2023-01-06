@@ -78,6 +78,27 @@ This processor will send relevant information to the warehouse service to create
 ##### Flow Diagram
 ![Create Warehouse Order Processor](./images/8excite-batch-service%20-%20createWasehouseOrderProcessor.drawio.png)
 
+#### 13. groupBuyExpirationProcessor
+##### Description
+This processor will process pending top up orders when top up end at hit based on order with related group buy id.
+
+##### Flow Diagram
+![Group Buy Expiration Processor](./images/8excite-%E2%9C%94%EF%B8%8F%2020221025%20-%20End%20group%20buy%20(topup)%20expiration%20processor.drawio.png)
+
+#### 14. groupBuyProcessor
+##### Description
+This processor will process floating orders when payment end at hit based on order with related group buy id.
+
+##### Flow Diagram
+![Group Buy Processor](./images/8excite-batch-service%20-%20groupBuyProcessor.drawio.png)
+
+#### 17. newCategoryNotificationProcessor
+##### Description
+This processor will trigger push notification processor when new category created.
+
+##### Flow Diagram
+![New Category Notification Processor](./images/8excite-%E2%9C%94%EF%B8%8F%2020221028%20-%20New%20category%20notification%20processor.drawio.png)
+
 #### 19. productImportProcessor
 ##### Description
 This processor will take the product import information to get the file and convert it into an object and store into the database. It will log error if the error come out.
