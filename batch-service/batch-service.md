@@ -141,6 +141,13 @@ This processor will refund order or shipment.
 ##### Flow Diagram
 ![Refund Order Or Shipment Processor](./images/8excite-batch-service%20-%20refundOrderOrShipmentProcessor.drawio.png)
 
+#### 22. refundOrderProcessor
+##### Description
+This processor will refund order.
+
+##### Flow Diagram
+![Refund Order Processor](./images/8excite-batch-service%20-%20refundOrderProcessor.drawio.png)
+
 #### 23. rewardProcessor
 ##### Description
 This processor will get the reward and forecast the reward to the user based on reward setting.
