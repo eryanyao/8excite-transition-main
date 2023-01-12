@@ -16,9 +16,6 @@ This module will trigger when user interact with product. It only including read
 	- **Bundle product** - can bundled with simple product or variation product (products field length > 0 AND isBundle field = true)
 	- **Free gift product** - product cannot be purchased (isFree field = true)
 
-#### Table Involves
-- products
-
 #### 1.1 Get Product Listing	
 ##### Flow Diagram
 ![Get Product Listing](./images/8excite-excite-service%20-%20Get%20Product%20Listing.drawio.png)
