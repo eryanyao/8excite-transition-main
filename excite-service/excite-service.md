@@ -4,6 +4,9 @@ This document is the documentation of this service. It was the backend services 
 ## Architecture Diagram
 ![Architecture Diagram](./images/8excite-Architecture%20Diagram.drawio.png)
 
+## Table Involves
+![Table Involves](./images/8excite-tableInvolves.drawio.png)
+
 ---
 ## Modules
 ### 1. Product
