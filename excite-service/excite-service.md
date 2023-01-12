@@ -16,6 +16,9 @@ This module will trigger when user interact with product. It only including read
 	- **Bundle product** - can bundled with simple product or variation product (products field length > 0 AND isBundle field = true)
 	- **Free gift product** - product cannot be purchased (isFree field = true)
 
+#### Table Involves
+- products
+
 #### 1.1 Get Product Listing	
 ##### Flow Diagram
 ![Get Product Listing](./images/8excite-excite-service%20-%20Get%20Product%20Listing.drawio.png)
@@ -97,7 +100,7 @@ This module will trigger when user checkout with pending topup group buy orders.
 This module will trigger after group buy top up calculator.
 
 ##### Flow Diagram
-![Group Buy Top Up Checkout](./images/8excite-excite-service%20-%20Multi%20Group%20Buy%20Checkout.drawio.png)
+![Group Buy Top Up Checkout](./images/8excite-excite-service%20-%20Top%20Up%20Group%20Buy%20Checkout.drawio.png)
 
 ##### List of APIs
 - POST /v2/user/groupBuys/{groupBuyId}/topup 
@@ -193,6 +196,6 @@ Order comparison will compare the order within
 - group buy
 - shipping method
 - logistic
-- address, detail must be same
+- address, all detail must be same
 - is the product having same variation
 - is the product having bundle, the bundle same, having same bundle item variation?

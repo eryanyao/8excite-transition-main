@@ -40,6 +40,9 @@ Processors for the batch service will be triggered via RabbitMQ or scheduled by 
 ##### Description
 This processor will broadcast notification to related all users.
 
+##### Trigger Logic
+![Application Broadcast Processor](./images/8excite-applicationBroadcastProcessorTriggerLogic.drawio.png)
+
 ##### Flow Diagram
 ![Application Broadcast Processor](./images/8excite-batch-service%20-%20applicationBroadcaseProcessor.drawio.png)
 
